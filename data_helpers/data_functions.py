@@ -17,7 +17,7 @@ def calculate_roi(budget, gross):
 # TODO: add roi
 def clean_tn_movie_budgets(df):
     import pandas as pd
-    from scipy.stats import zscore
+    # from scipy.stats import zscore
 
     #convert releae_data to datetime and add a release_year column
     df['release_date'] = pd.to_datetime(df['release_date'])
@@ -31,7 +31,21 @@ def clean_tn_movie_budgets(df):
     df = df[df['production_budget'] > 0]
     df = df[df['worldwide_gross'] > 0]
 
+    # create ROI feature
     df['ROI'] = calculate_roi(df['production_budget'], df['worldwide_gross'])
-    # calculate overall zscore
-    df['ROI_zscore'] = zscore(df['ROI'])
+
+    # create ROI_zscore feature
+    # df['ROI_zscore'] = zscore(df['ROI'])
     return df
+
+def compute_iqr_table(df):
+    import pandas as pd
+
+    iqr = pd.DataFrame()
+    #df = df.explode('genres')
+    iqr['Q1'] = df.groupby('genres').ROI.quantile(.25)
+    iqr['Q3'] = df.groupby('genres').ROI.quantile(.75)
+    iqr['IQR'] = iqr['Q3'] - iqr['Q1']
+    iqr['upper_thresh'] = iqr['Q3'] + 1.5*iqr['IQR']
+    iqr['lower_thresh'] = iqr['Q1'] - 1.5*iqr['IQR']
+    return iqr
