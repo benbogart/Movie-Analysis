@@ -3,7 +3,7 @@
 <span style="float:right">Photo by <a href="https://unsplash.com/@dmjdenise?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Denise Jans</a> on <a href="https://unsplash.com/s/photos/movie?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 <h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Breaking-into-the-movie-industry" data-toc-modified-id="Breaking-into-the-movie-industry-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Breaking into the movie industry</a></span><ul class="toc-item"><li><span><a href="#Overview" data-toc-modified-id="Overview-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Overview</a></span></li><li><span><a href="#Business-Problem" data-toc-modified-id="Business-Problem-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Business Problem</a></span></li><li><span><a href="#Data" data-toc-modified-id="Data-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>Data</a></span></li></ul></li><li><span><a href="#Questions-and-Methods" data-toc-modified-id="Questions-and-Methods-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Questions and Methods</a></span><ul class="toc-item"><li><span><a href="#Clean-Data" data-toc-modified-id="Clean-Data-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Clean Data</a></span><ul class="toc-item"><li><span><a href="#Clean-the-movie-budget-dataframe." data-toc-modified-id="Clean-the-movie-budget-dataframe.-2.1.1"><span class="toc-item-num">2.1.1&nbsp;&nbsp;</span>Clean the movie budget dataframe.</a></span></li><li><span><a href="#Clean-up-imdb_title_principals" data-toc-modified-id="Clean-up-imdb_title_principals-2.1.2"><span class="toc-item-num">2.1.2&nbsp;&nbsp;</span>Clean up imdb_title_principals</a></span></li><li><span><a href="#Clean-up-imdb_name_basics" data-toc-modified-id="Clean-up-imdb_name_basics-2.1.3"><span class="toc-item-num">2.1.3&nbsp;&nbsp;</span>Clean up imdb_name_basics</a></span></li><li><span><a href="#Clean-up-imdb_title_basics" data-toc-modified-id="Clean-up-imdb_title_basics-2.1.4"><span class="toc-item-num">2.1.4&nbsp;&nbsp;</span>Clean up imdb_title_basics</a></span></li></ul></li><li><span><a href="#Join-the-data" data-toc-modified-id="Join-the-data-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Join the data</a></span><ul class="toc-item"><li><span><a href="#Join-title_basics-and-movie_budget-as-df" data-toc-modified-id="Join-title_basics-and-movie_budget-as-df-2.2.1"><span class="toc-item-num">2.2.1&nbsp;&nbsp;</span>Join title_basics and movie_budget as df</a></span></li><li><span><a href="#Join-df-with-title_principals-as-df" data-toc-modified-id="Join-df-with-title_principals-as-df-2.2.2"><span class="toc-item-num">2.2.2&nbsp;&nbsp;</span>Join df with title_principals as df</a></span></li><li><span><a href="#Join-df-with-name_basics-as-df" data-toc-modified-id="Join-df-with-name_basics-as-df-2.2.3"><span class="toc-item-num">2.2.3&nbsp;&nbsp;</span>Join df with name_basics as df</a></span></li></ul></li><li><span><a href="#Remove-Outliers" data-toc-modified-id="Remove-Outliers-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>Remove Outliers</a></span><ul class="toc-item"><li><span><a href="#Overall-with-zcore" data-toc-modified-id="Overall-with-zcore-2.3.1"><span class="toc-item-num">2.3.1&nbsp;&nbsp;</span>Overall with zcore</a></span></li><li><span><a href="#By-Genre-with-Q3-+-(1.5*IRQ)" data-toc-modified-id="By-Genre-with-Q3-+-(1.5*IRQ)-2.3.2"><span class="toc-item-num">2.3.2&nbsp;&nbsp;</span>By Genre with Q3 + (1.5*IRQ)</a></span></li></ul></li><li><span><a href="#Q2:-What-is-the-ideal-budget-for-the-film?" data-toc-modified-id="Q2:-What-is-the-ideal-budget-for-the-film?-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>Q2: What is the ideal budget for the film?</a></span><ul class="toc-item"><li><span><a href="#Create-Budget-Class-Feature" data-toc-modified-id="Create-Budget-Class-Feature-2.4.1"><span class="toc-item-num">2.4.1&nbsp;&nbsp;</span>Create Budget Class Feature</a></span></li><li><span><a href="#Conclusion" data-toc-modified-id="Conclusion-2.4.2"><span class="toc-item-num">2.4.2&nbsp;&nbsp;</span>Conclusion</a></span></li><li><span><a href="#Conclusion" data-toc-modified-id="Conclusion-2.4.3"><span class="toc-item-num">2.4.3&nbsp;&nbsp;</span>Conclusion</a></span></li></ul></li><li><span><a href="#Q3-Who-are-the-most-profitable-people" data-toc-modified-id="Q3-Who-are-the-most-profitable-people-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>Q3 Who are the most profitable people</a></span><ul class="toc-item"><li><span><a href="#Create-features" data-toc-modified-id="Create-features-2.5.1"><span class="toc-item-num">2.5.1&nbsp;&nbsp;</span>Create features</a></span></li><li><span><a href="#Filter-our-Working-data" data-toc-modified-id="Filter-our-Working-data-2.5.2"><span class="toc-item-num">2.5.2&nbsp;&nbsp;</span>Filter our Working data</a></span></li><li><span><a href="#Explore-the-data" data-toc-modified-id="Explore-the-data-2.5.3"><span class="toc-item-num">2.5.3&nbsp;&nbsp;</span>Explore the data</a></span></li><li><span><a href="#Create-visualizations-for-various-movie-industry-roles" data-toc-modified-id="Create-visualizations-for-various-movie-industry-roles-2.5.4"><span class="toc-item-num">2.5.4&nbsp;&nbsp;</span>Create visualizations for various movie industry roles</a></span></li></ul></li></ul></li><li><span><a href="#Evaluation" data-toc-modified-id="Evaluation-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Evaluation</a></span></li><li><span><a href="#Conclusions" data-toc-modified-id="Conclusions-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Conclusions</a></span><ul class="toc-item"><li><span><a href="#What-could-be-improved" data-toc-modified-id="What-could-be-improved-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>What could be improved</a></span></li><li><span><a href="#The-next-steps" data-toc-modified-id="The-next-steps-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>The next steps</a></span></li></ul></li><li><span><a href="#For-More-Information" data-toc-modified-id="For-More-Information-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>For More Information</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Breaking-into-the-movie-industry" data-toc-modified-id="Breaking-into-the-movie-industry-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Breaking into the movie industry</a></span><ul class="toc-item"><li><span><a href="#Overview" data-toc-modified-id="Overview-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Overview</a></span></li><li><span><a href="#Business-Problem" data-toc-modified-id="Business-Problem-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Business Problem</a></span></li><li><span><a href="#Data" data-toc-modified-id="Data-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>Data</a></span></li></ul></li><li><span><a href="#Questions-and-Methods" data-toc-modified-id="Questions-and-Methods-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Questions and Methods</a></span><ul class="toc-item"><li><span><a href="#Clean-Data" data-toc-modified-id="Clean-Data-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Clean Data</a></span><ul class="toc-item"><li><span><a href="#Clean-the-movie-budget-dataframe." data-toc-modified-id="Clean-the-movie-budget-dataframe.-2.1.1"><span class="toc-item-num">2.1.1&nbsp;&nbsp;</span>Clean the movie budget dataframe.</a></span></li><li><span><a href="#Clean-up-imdb_title_principals" data-toc-modified-id="Clean-up-imdb_title_principals-2.1.2"><span class="toc-item-num">2.1.2&nbsp;&nbsp;</span>Clean up imdb_title_principals</a></span></li><li><span><a href="#Clean-up-imdb_name_basics" data-toc-modified-id="Clean-up-imdb_name_basics-2.1.3"><span class="toc-item-num">2.1.3&nbsp;&nbsp;</span>Clean up imdb_name_basics</a></span></li><li><span><a href="#Clean-up-imdb_title_basics" data-toc-modified-id="Clean-up-imdb_title_basics-2.1.4"><span class="toc-item-num">2.1.4&nbsp;&nbsp;</span>Clean up imdb_title_basics</a></span></li></ul></li><li><span><a href="#Join-the-data" data-toc-modified-id="Join-the-data-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Join the data</a></span><ul class="toc-item"><li><span><a href="#Join-title_basics-and-movie_budget-as-df" data-toc-modified-id="Join-title_basics-and-movie_budget-as-df-2.2.1"><span class="toc-item-num">2.2.1&nbsp;&nbsp;</span>Join title_basics and movie_budget as df</a></span></li><li><span><a href="#Join-df-with-title_principals-as-df" data-toc-modified-id="Join-df-with-title_principals-as-df-2.2.2"><span class="toc-item-num">2.2.2&nbsp;&nbsp;</span>Join df with title_principals as df</a></span></li><li><span><a href="#Join-df-with-name_basics-as-df" data-toc-modified-id="Join-df-with-name_basics-as-df-2.2.3"><span class="toc-item-num">2.2.3&nbsp;&nbsp;</span>Join df with name_basics as df</a></span></li></ul></li><li><span><a href="#Remove-Outliers" data-toc-modified-id="Remove-Outliers-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>Remove Outliers</a></span><ul class="toc-item"><li><span><a href="#Overall-with-zcore" data-toc-modified-id="Overall-with-zcore-2.3.1"><span class="toc-item-num">2.3.1&nbsp;&nbsp;</span>Overall with zcore</a></span></li><li><span><a href="#By-Genre-with-Q3-+-(1.5*IRQ)" data-toc-modified-id="By-Genre-with-Q3-+-(1.5*IRQ)-2.3.2"><span class="toc-item-num">2.3.2&nbsp;&nbsp;</span>By Genre with Q3 + (1.5*IRQ)</a></span></li></ul></li></ul></li><li><span><a href="#Questions" data-toc-modified-id="Questions-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Questions</a></span><ul class="toc-item"><li><span><a href="#Q1:-Which-Genres-are-the-most-profitable?" data-toc-modified-id="Q1:-Which-Genres-are-the-most-profitable?-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Q1: Which Genres are the most profitable?</a></span><ul class="toc-item"><li><span><a href="#Conclusion" data-toc-modified-id="Conclusion-3.1.1"><span class="toc-item-num">3.1.1&nbsp;&nbsp;</span>Conclusion</a></span></li></ul></li><li><span><a href="#Q2:-What-is-the-ideal-budget-for-the-film?" data-toc-modified-id="Q2:-What-is-the-ideal-budget-for-the-film?-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Q2: What is the ideal budget for the film?</a></span><ul class="toc-item"><li><span><a href="#Create-Budget-Class-Feature" data-toc-modified-id="Create-Budget-Class-Feature-3.2.1"><span class="toc-item-num">3.2.1&nbsp;&nbsp;</span>Create Budget Class Feature</a></span></li><li><span><a href="#Conclusion" data-toc-modified-id="Conclusion-3.2.2"><span class="toc-item-num">3.2.2&nbsp;&nbsp;</span>Conclusion</a></span></li></ul></li><li><span><a href="#Q3-Who-are-the-most-profitable-people" data-toc-modified-id="Q3-Who-are-the-most-profitable-people-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>Q3 Who are the most profitable people</a></span><ul class="toc-item"><li><span><a href="#Create-features" data-toc-modified-id="Create-features-3.3.1"><span class="toc-item-num">3.3.1&nbsp;&nbsp;</span>Create features</a></span></li><li><span><a href="#Filter-our-Working-data" data-toc-modified-id="Filter-our-Working-data-3.3.2"><span class="toc-item-num">3.3.2&nbsp;&nbsp;</span>Filter our Working data</a></span></li><li><span><a href="#Explore-the-data" data-toc-modified-id="Explore-the-data-3.3.3"><span class="toc-item-num">3.3.3&nbsp;&nbsp;</span>Explore the data</a></span></li><li><span><a href="#Create-visualizations-for-various-movie-industry-roles" data-toc-modified-id="Create-visualizations-for-various-movie-industry-roles-3.3.4"><span class="toc-item-num">3.3.4&nbsp;&nbsp;</span>Create visualizations for various movie industry roles</a></span></li></ul></li></ul></li><li><span><a href="#Evaluation" data-toc-modified-id="Evaluation-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Evaluation</a></span></li><li><span><a href="#Conclusions" data-toc-modified-id="Conclusions-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Conclusions</a></span><ul class="toc-item"><li><span><a href="#What-could-be-improved" data-toc-modified-id="What-could-be-improved-5.1"><span class="toc-item-num">5.1&nbsp;&nbsp;</span>What could be improved</a></span></li><li><span><a href="#The-next-steps" data-toc-modified-id="The-next-steps-5.2"><span class="toc-item-num">5.2&nbsp;&nbsp;</span>The next steps</a></span></li></ul></li><li><span><a href="#For-More-Information" data-toc-modified-id="For-More-Information-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>For More Information</a></span></li></ul></div>
 
 # Breaking into the movie industry
 Author: Ben Bogart
@@ -21,9 +21,7 @@ This problem led to the the following three high level questions, which were cho
 
 ## Data
 
-The following Data was used in this analysis
-
-The following tables are used from IMDB and the-numbers.com:
+The following data tables were used to answer the questions investigated here. The data comes from IMDB and the-numbers.com:
 * tn_movie_budgets
 * imdb_title_principals
 * imdb_title_basics
@@ -51,20 +49,22 @@ Why is this approach appropriate given the data and the business problem?
 
 ## Clean Data
 ### Clean the movie budget dataframe.
-The function clean clean_tn_movie_budgets in the data_helpers package takes in the raw dataframe and does th following:
-1. Converts the release_date column to datetime
-1. converts amounts to int
-1. Adds a release _year column for joining
-1. removes rows where production budgets or worldwide gross == 0
-1. Creates features for ROI and ROI_zscore
+The function `clean_tn_movie_budgets` takes in the raw `tn_movie_budgets` DataFrame and does the following:
+1. Converts the `release_date` column to datetime
+1. Converts UDS amounts to int
+1. Adds a `release _year` column for joining
+1. Removes rows where production budgets or worldwide gross == 0
+1. Creates features for `ROI` and `ROI_zscore`
 
 ### Clean up imdb_title_principals
 
-Combine Actor and Actress because its the same job. (and who says Actress anymore??)
+1. Drop columns we don't need 
+1. Check for missing values
+1. Combine Actor and Actress because its the same job. (and who says Actress anymore??)
 
 ### Clean up imdb_name_basics
 
-Most of this data is truncated.  We have more complete data elsewhre.  Drop all columns except key and person's name
+Most of this data is truncated.  We have more complete data elsewhere.  Drop all columns except key and person's name
 
 ### Clean up imdb_title_basics
 
@@ -73,19 +73,19 @@ This table contains column with a comma separated list of genres.  Not all rows 
 ## Join the data
 
 ### Join title_basics and movie_budget as df
-We will start by joining the title_basics and movie_budget so we can deal with any duplicates created by thay join right away.
+We will start by joining the title_basics and movie_budget so we can deal with any duplicates created by that join right away.
 
-We will use merge to combine title_basics with movie_budgets using a right join on both release year, and movie title because we don't have a key in common.  Because merge reindexes, we reset the index to keep tconst in our table.
+We will use merge to combine title_basics with movie_budgets using a right join on both release year, and movie title because we don't have a key in common.  Merge reindexes, so we reset the index to keep `tconst` in our table.
 
 We know there are duplicates because titles are listed with the same release year
-but different genres and tconst values.  We will drop duplicates.
+but different genres and `tconst` values in the `title_basics` DataFrame.  We will drop duplicates.
 
 Since we don't know which of the duplicated movies is correct we will drop 
 them all.  If we don't we could end up identifying the wrong people as profitable
 which would be worse than not identifying a profitable person.
 
 ### Join df with title_principals as df
-There is a unique key (tconst) for joining this title_principals with df.  This will give us movie
+There is a unique key `tconst` for joining this title_principals with df.  This will give us movie
 data for each principal in a movie.  The indices are already set so they don't need to be specified.
 
 We want records for which we have data in both dataframes so we will use an inner join.
@@ -103,10 +103,12 @@ First we will visualize our data to see if it looks like there are outliers.  Th
 
 Our first task will be to create a reusable function to visualize our data.
 
+Our starting point looks like this:
+
 ![Outliers](images/outliers1.png)
 
 ### Overall with zcore
-First we will remove all outliers with regard to movie budget using the zcore method (removing everything more than 3 std from the mean).
+First we will remove all outliers with regard to movie budget using the zscore method (removing everything more than 3 std from the mean).
 
 We create a zcore feature using the scipy.stats package and use it to limit our results.  We do not need to remove any outliers below 3 std below the mean because ROI below -100% is not possible.
 
@@ -119,9 +121,23 @@ This is better, but it looks like there are still quite a few outliers.  Perhaps
 
 Now the data is prepped for answering our questions.
 
+# Questions
+## Q1: Which Genres are the most profitable?
+
+Our dataframe right now has movies appearing more than once per genre because it has a row for each role in the movie. For this question we need to make sure there is only one of each movie per genre.  It is ok for movies in multiple genres to appear in each of those genres once.
+
+We also limit our data to genres containing more than 90 movies.  (90 was chose based evidence of sufficient data in visualizations).
+
+In order to show the top performing genres, we group by genre to get the ROI by genre and visualize the top performing genres.
+
+![Genres](images/genres1.png)
+
 Limiting our exploration to only the top 4 genres we look at ROI trends overtime.
 
 ![Genres](images/genres2.png)
+
+### Conclusion
+Of the top four genres, one shows an obvioius upward trend in ROI.  Sci-Fi and Romance appear flat.  **Horror, Mystery** are not only the top earners by ROI, but the are both trending up.  These are the idea genres to focus on or a first film.
 
 ## Q2: What is the ideal budget for the film?
 
@@ -145,6 +161,8 @@ Here are the thresholds for the various unions:
     
 Source: http://www.anonymousproductionassistant.com/2018/01/17/low-budget-movie/
 
+We will use the IATSE budget size thresholds because they better fit the budgets in our data.  To do this we create a function and use apply to create a new feature called `budget_class`.  We then create a box plot to show the distribution in those ranges. 
+
 There were only 3 movies in the < \$6M class so we dropped that due to lack of data.
 
 ![budget](images/budget2.png)
@@ -152,9 +170,6 @@ There were only 3 movies in the < \$6M class so we dropped that due to lack of d
 
 ### Conclusion
 In all cases the ideal budget is in the \$6M - \$14.2M range.  Over \$14.2M results in signifigant decrease in ROI.
-
-### Conclusion
-Of the top four genres, one shows an obvioius upward trend in ROI.  Sci-Fi and Romance appear flat.  **Horror, Mystery** are not only the top earners by ROI, but the are both trending up.  These are the idea genres to focus on or a first film.
 
 ## Q3 Who are the most profitable people
 We want to filter people by
@@ -172,11 +187,11 @@ We will create the features we need to do our filtering including:
 * Create a `min_roi` feature for the lowest ROI of all the films a person has worked on
 * create a `mean_cat_roi` feature for the mean roi for each person by the role the played in the movie
 
-We want a mean ROI for each individual limited to thier films in the Horror and Mystery Categories.  To do this we will first limit our data to films in Horror and Mystery, remove any duplicate movies (movies that appear in both categories).  Then we will use transform because it applys an aggregation function but along the original axis.  And we will fill any na with 0 so it doesn't cause problems later.
+We want a mean ROI for each individual limited to their films in the Horror and Mystery categories.  To do this we will first limit our data to films in Horror and Mystery and remove any duplicate movies (movies that appear in both categories).  Then we will use transform because it applies an aggregation function but along the original axis keeping the original index.  And we will fill any na with 0 so it doesn't cause problems later.
 
 * create a `mean_hm_roi` feature for the mean ROI of horror and mystery films a person has worked on 
 
-We want to create a feature for the number of horror or mystery films a person has been so we can later exclude people who have made fewer than a certain number of films in these categories.  To do this we first limit our data to those categories, then group by person, and count the number of unique film ids *tconst* in each group.
+We want to create a feature for the number of horror or mystery films a person has been so we can later exclude people who have made fewer than a certain number of films in these categories.  To do this we first limit our data to those categories, then group by person, and count the number of unique film ids *tconst* in each group.  Because the resulting Series does not have the same index we use map to lookup the values for our num_hm_films column.
 
 * create a `mean_hm_films` feature for the number of films a person has been in by genre
 
@@ -203,16 +218,16 @@ That is uniformative.  Perhaps because every movie needs all of these people so 
 
 ### Create visualizations for various movie industry roles
 
-Start by createing a a plotting function that can be passed different roles (category), and can take care of limiting and sorting the data.
+Start by creating a plotting function that can be passed different roles (category), and can take care of limiting and sorting the data.
 
-One chalange is limiting to a specific. number of individuals because each individual is listed multiple times int he data.  To take cate of this we create an nconsts series with the sorted individuals and we filter our dataframe comparing to a slice of nconsts.
+One challenge is limiting to a specific number of individuals because each individual is listed multiple times in the data.  To take care of this we create an `nconsts` series with the sorted individuals and we filter our dataframe comparing to a slice of `nconsts`.
 
-```    #create a list of individuals so we can limit to a number of individuals
+    #create a list of individuals so we can limit to a number of individuals
     nconsts = df['nconst'].unique()
     
     #limit to number of people
     df = df[df['nconst'].isin(nconsts[:num])]
-```
+
 We will limit our search to producers because producers are responsible for hiring directors have have a hand in the entire moving making process.
 
 ![people](images/people4.png)
@@ -221,7 +236,7 @@ We will limit our search to producers because producers are responsible for hiri
 
 # Evaluation
 
-The data here clearly suggests that Horror and Mystery films are moderate budget high ROI genres and would be a good choice for a first movie.  Because of the limited data its not clear that these would be the **best** choice.  I had to remove genres like Animation because I didn't data have enough films that met our criteria for inclusion in the analysis.  Also, if Microsoft plans to spend more than /$14.2M other categories would be a better fit. 
+The data here clearly suggests that Horror and Mystery films are moderate budget and high ROI genres. These would be a good choice for a first movie.  Because of the limited data it is not clear that these would be the **best** choice.  I had to remove genres like Animation because I didn't data have enough films that met our criteria for inclusion in the analysis.  Also, if Microsoft plans to spend more than /$14.2M other categories would be a better fit. 
 
 It is important to note that in all genres there were films that lost money, and the ROI varied greatly by film.  While the choices laid out here will increase the likelihood of success, it does not indicate that similar results would be expected from only the above recommendations.   There are many other factors to explore, and quite a bit of creativity to inspire in order to get the best results.  
 
@@ -243,10 +258,13 @@ one of the following producers:
 Several genres had to be dropped from the analysis because too few films met our criteria.  Acquiring more data and rerunning the above analysis would be beneficial and increase confidence in the results.
 
 ## The next steps
+To continue this line of investigation:
 * It is assumed here that producers have the highest impact on a movies success because they hire the director and have final say on casting, but further exploration should be done to verify this.
 * Look at pairings of people to see if there are teams that are more profitable.
-* Investigate the budget distributions for genres like Sci-Fi and Animation to see if simmilar conclusions can be made about them on a different scale.
 * Look at the percentage of profitable films by genre
+* Investigate the budget distributions for genres like Sci-Fi and Animation to see if similar conclusions can be made about them on a different scale.
+
+Areas to investigate outside this line:
 * Explore effects of runtime on profitability by genre
 * Explore whether production studio has an impact on ROI
 * Explore whether the Rating affects the ROI, and if so what can be done to influence the rating.
