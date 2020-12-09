@@ -131,3 +131,4 @@ dmypy.json
 # project specific
 drafts/
 .DS_Store
+hidden/

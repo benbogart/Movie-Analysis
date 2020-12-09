@@ -1,22 +1,20 @@
-def get_budget_class(budget):
-    '''Takes a budget number in USD and returns the IATSE budget tier.
-    (IATSE is the union that covers most of the below-the-line crew)
-    '''
-    if budget < 600000:
-        return 'under 6m'
-    elif budget >= 6000000 and budget < 10000000:
-        return '6-10m'
-    elif budget >= 10000000 and budget < 14200000:
-        return '10-14.2m'
-    elif budget >= 14200000:
-        return '14.2m +'
-
 def calculate_roi(budget, gross):
     return (gross - budget) / budget * 100
 
-# TODO: add roi
-def clean_tn_movie_budgets(df):
-    import pandas as pd
+def clean_tn_movie_budgets(pd, df):
+
+    ''' Cleans the tn_movie_budgets DataFrame
+
+    Parameters
+    ----------
+    pd: a pandas instance
+    df: the DataFrame to clean
+
+    Returns
+    ----------
+    Cleaned pandas DataFrame
+    '''
+
     # from scipy.stats import zscore
 
     #convert releae_data to datetime and add a release_year column
@@ -38,7 +36,25 @@ def clean_tn_movie_budgets(df):
     # df['ROI_zscore'] = zscore(df['ROI'])
     return df
 
-def compute_iqr_table(df):
+def compute_iqr_table(pd, df, col = 'genres'):
+    ''' Creates a quartile table, for each group in col.
+
+    Parameters
+    ----------
+    pd: a pandas object
+    df: the DataFrame to operate on
+    col: the column to group by
+
+    Returns
+    ----------
+    padas DataFrame with the columns
+        Q1 - first quartile by group
+        Q3 - third quartile by group
+        IQR - Interquartile range
+        upper_thresh = Q3 + (1.5 * IQR)
+        lower_thresh = Q1 - (1.5 * IQR)
+'''
+
     import pandas as pd
 
     iqr = pd.DataFrame()
